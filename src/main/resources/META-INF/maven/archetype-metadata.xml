@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor  name="beast-archetype"
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
+            http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
+
+<requiredProperties>
+    <requiredProperty key="groupId">
+        <defaultValue>com.thebeastshop</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="artifactId">
+        <defaultValue>test</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="package">
+        <defaultValue>com.thebeastshop.test</defaultValue>
+    </requiredProperty>
+</requiredProperties>
+
+<modules>
+    <module id="${rootArtifactId}-api" name="${rootArtifactId}-api" dir="__rootArtifactId__-api">
+        <fileSets>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/test/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/test/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+        </fileSets>
+    </module>
+    <module id="${rootArtifactId}-core" name="${rootArtifactId}-core" dir="__rootArtifactId__-core">
+        <fileSets>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/test/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/test/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+        </fileSets>
+    </module>
+    <module id="${rootArtifactId}-dao" name="${rootArtifactId}-dao" dir="__rootArtifactId__-dao">
+        <fileSets>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/test/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                    <include>mapper</include>
+                </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/test/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+        </fileSets>
+    </module>
+    <module id="${rootArtifactId}-main" name="${rootArtifactId}-main" dir="__rootArtifactId__-main">
+        <fileSets>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/test/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/test/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/main/assembly</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/main/bin</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+        </fileSets>
+    </module>
+    <module id="${rootArtifactId}-mybatisGen" name="${rootArtifactId}-mybatisGen" dir="__rootArtifactId__-mybatisGen">
+        <fileSets>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8" packaged="true">
+                <directory>src/test/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/test/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </fileSet>
+        </fileSets>
+    </module>
+</modules>
+</archetype-descriptor>
